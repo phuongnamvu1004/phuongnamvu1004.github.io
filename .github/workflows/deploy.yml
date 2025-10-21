@@ -2,8 +2,8 @@ name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # adjust if your main branch is called 'master'
-  workflow_dispatch:     # allows manual trigger in GitHub UI
+    branches: [ main ]   
+  workflow_dispatch:   
 
 permissions:
   contents: read
