@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.timeline-root {
+  @apply flex flex-col md:flex-row items-start;
+}
+
+.timeline-right {
+  @apply md:flex-row-reverse;
+}
+
+.timeline-dot-wrapper {
+  @apply hidden md:flex w-1/2 justify-center relative;
+}
+
+.timeline-dot {
+  @apply absolute z-10 top-1.5 h-4 w-4 rounded-full bg-[#3A86FF] border-4 border-[#EDEDED];
+}
+
+.timeline-card {
+  @apply w-full md:w-1/2 bg-[#F7F7F7] p-6 rounded-lg shadow-lg ml-8 md:ml-0 md:px-8;
+}
+
+.timeline-date {
+  @apply text-sm font-medium text-[#3A86FF];
+}
+
+.timeline-role {
+  @apply text-xl font-bold text-[#1C1C1C] mt-1;
+}
+
+.timeline-company {
+  @apply text-lg font-semibold text-[#6B6B6B] mb-3;
+}
+
+.timeline-location {
+  @apply flex items-center text-sm text-[#6B6B6B] mb-4;
+}
+
+.timeline-pin {
+  @apply h-4 w-4 mr-2;
+}
+
+.timeline-desc {
+  @apply text-[#6B6B6B];
+}

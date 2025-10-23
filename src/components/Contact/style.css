@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Component-specific classes using Tailwind's @apply */
+
+.contact-section {
+  @apply py-20 md:py-32 bg-[#EDEDED];
+}
+
+.contact-container {
+  @apply container mx-auto max-w-5xl px-6 text-center;
+}
+
+.contact-cta {
+  @apply flex items-center justify-center gap-3 px-6 py-3 bg-[#3A86FF] text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-all duration-200 w-full sm:w-auto;
+}
+
+.contact-icon {
+  @apply p-3 bg-[#F7F7F7] text-[#6B6B6B] rounded-full shadow-md hover:text-[#3A86FF] hover:shadow-lg transition-all duration-200;
+}
+
+.contact-heading {
+  @apply text-3xl md:text-4xl font-bold text-[#1C1C1C] mb-6;
+}
+
+.contact-copy {
+  @apply text-lg text-[#6B6B6B] mb-12 max-w-xl mx-auto;
+}
+
+.contact-actions {
+  @apply flex flex-col sm:flex-row justify-center items-center gap-6;
+}
+
+.contact-icons {
+  @apply flex justify-center gap-6;
+}

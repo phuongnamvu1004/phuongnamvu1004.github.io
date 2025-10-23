@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pc-root {
+  @apply bg-[#EDEDED] rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl;
+}
+
+.pc-content {
+  @apply p-6 flex-grow;
+}
+
+.pc-title {
+  @apply text-xl font-bold text-[#1C1C1C] mb-2;
+}
+
+.pc-desc {
+  @apply text-[#6B6B6B] mb-4 flex-grow;
+}
+
+.pc-tags {
+  @apply flex flex-wrap gap-2;
+}
+
+.pc-tag {
+  @apply text-xs font-semibold bg-[#3A86FF]/20 text-[#3A86FF] px-3 py-1 rounded-full;
+}
+
+.pc-footer {
+  @apply p-6 bg-[#E0E0E0];
+}
+
+.pc-link {
+  @apply flex items-center font-medium text-[#3A86FF] hover:text-blue-700 transition-colors;
+}

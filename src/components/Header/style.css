@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header-root {
+  @apply sticky top-0 z-50 w-full backdrop-blur-sm shadow-sm;
+  background-color: var(--color-lighter);
+}
+
+.header-nav {
+  @apply container mx-auto max-w-5xl px-6 py-4 flex justify-between items-center;
+}
+
+.header-brand {
+  @apply text-2xl font-bold;
+  color: var(--color-text-primary);
+}
+
+.header-links {
+  @apply space-x-6 hidden md:flex;
+}
+
+.header-link {
+  @apply transition-colors duration-200;
+  color: var(--color-muted);
+}
+.header-link:hover {
+  color: var(--color-blue);
+}

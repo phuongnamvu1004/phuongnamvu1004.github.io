@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-content {
+  @apply w-full max-w-3xl text-left self-start;
+}
+
+.about-section {
+  @apply container mx-auto max-w-5xl px-6 py-20 md:py-32 flex flex-col items-center text-left min-h-[80vh] justify-center;
+  color: var(--color-text-primary);
+}
+
+.about-intro {
+  @apply text-lg md:text-xl font-medium mb-2 flex items-start;
+  color: var(--color-text-primary);
+}
+
+.about-title {
+  @apply text-4xl md:text-6xl font-bold mb-4;
+  color: var(--color-text-primary);
+}
+
+.about-accent {
+  color: var(--color-accent);
+}
+
+.about-desc {
+  @apply text-lg md:text-xl max-w-3xl mb-8;
+  color: var(--color-text-secondary);
+}
+
+.about-skills {
+  @apply w-full max-w-4xl p-8 rounded-lg shadow-inner mt-12;
+  background-color: var(--color-lighter);
+}
+
+.about-skills-title {
+  @apply text-2xl font-bold text-center mb-6;
+  color: var(--color-text-primary);
+}
+
+.about-skills-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-x-8;
+}

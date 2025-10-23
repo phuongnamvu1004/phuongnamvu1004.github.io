@@ -1,0 +1,14 @@
+:root {
+  --color-background: #121212;
+  --color-card: #1E1E1E;
+  --color-text-primary: #EDEDED;
+  --color-text-secondary: #A0A0A0;
+  --color-accent: #F48FB1;
+
+  /* legacy palette (kept for components that used them) */
+  --color-light: #F7F7F7;
+  --color-lighter: #EDEDED;
+  --color-muted: #6B6B6B;
+  --color-blue: #3A86FF;
+  --color-muted-2: #E0E0E0;
+}

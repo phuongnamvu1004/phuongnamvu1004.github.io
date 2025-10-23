@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.experience-section {
+  @apply py-20 md:py-32 bg-[#EDEDED];
+}
+
+.experience-container {
+  @apply container mx-auto max-w-5xl px-6;
+}
+
+.experience-title {
+  @apply text-3xl md:text-4xl font-bold text-center text-[#1C1C1C] mb-16;
+}
+
+.experience-timeline {
+  @apply relative;
+}
+
+.experience-line {
+  @apply absolute left-0 md:left-1/2 top-0 h-full w-1 bg-[#3A86FF]/30 -translate-x-1/2;
+}
+
+.experience-items {
+  @apply space-y-12;
+}
