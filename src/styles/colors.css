@@ -1,5 +1,5 @@
 :root {
-  --color-background: #121212;
+  --color-background: #453e3e;
   --color-card: #1E1E1E;
   --color-text-primary: #EDEDED;
   --color-text-secondary: #A0A0A0;
@@ -10,5 +10,6 @@
   --color-lighter: #EDEDED;
   --color-muted: #6B6B6B;
   --color-blue: #3A86FF;
-  --color-muted-2: #E0E0E0;
+  /* faint divider color used for subtle borders (reduced opacity) */
+  --color-muted-2: rgba(255,255,255,0.06);
 }

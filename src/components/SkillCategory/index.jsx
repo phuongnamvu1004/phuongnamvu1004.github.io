@@ -20,8 +20,14 @@ export default function SkillCategory({ category, list }) {
       </button>
       <div className={`skill-panel ${isOpen ? 'skill-open' : 'skill-closed'}`}>
         <ul className="skill-list">
-          {list.map(skill => (
-            <li key={skill} className="skill-item">{skill}</li>
+          {list.map((skill, i) => (
+            <li
+              key={skill}
+              className="skill-item"
+              style={{ transitionDelay: `${i * 0.2}s` }}
+            >
+              {skill}
+            </li>
           ))}
         </ul>
       </div>

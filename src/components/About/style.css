@@ -21,8 +21,23 @@
   color: var(--color-text-primary);
 }
 
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 6px;
+  vertical-align: bottom;
+  background-color: var(--color-accent);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
 .about-accent {
   color: var(--color-accent);
+  text-shadow: 0 0 4px var(--color-accent), 0 0 8px var(--color-accent);
 }
 
 .about-desc {
@@ -31,12 +46,12 @@
 }
 
 .about-skills {
-  @apply w-full max-w-4xl p-8 rounded-lg shadow-inner mt-12;
-  background-color: var(--color-lighter);
+  @apply w-full max-w-3xl text-left self-start mt-12;
+  /* background-color: var(--color-lighter); */
 }
 
 .about-skills-title {
-  @apply text-2xl font-bold text-center mb-6;
+  @apply text-2xl font-bold text-left mb-6;
   color: var(--color-text-primary);
 }
 

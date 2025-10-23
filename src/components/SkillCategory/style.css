@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 .skill-root {
-  @apply w-full border-b border-b-[#D0D0D0] last:border-b-0;
+  @apply w-full border-b last:border-b-0;
+  border-color: var(--color-muted-2);
 }
 
 .skill-button {
-  @apply flex items-center justify-between w-full text-left text-lg font-semibold text-[#1C1C1C] mb-2 py-3 transition-colors hover:text-[#3A86FF];
+  @apply flex items-center justify-between w-full text-left text-lg font-semibold mb-2 py-3 transition-colors;
+  color: var(--color-text-secondary);
+}
+
+.skill-button:hover {
+  color: var(--color-blue);
 }
 
 .skill-icon {
@@ -31,5 +37,14 @@
 }
 
 .skill-item {
-  @apply text-left text-[#6B6B6B];
+  @apply text-left;
+  color: var(--color-muted);
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.skill-panel.skill-open .skill-item {
+  opacity: 1;
+  transform: translateY(0);
 }

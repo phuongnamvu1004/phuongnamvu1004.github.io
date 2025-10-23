@@ -19,7 +19,32 @@
 }
 
 .experience-line {
-  @apply absolute left-0 md:left-1/2 top-0 h-full w-1 bg-[#3A86FF]/30 -translate-x-1/2;
+  /* parent line: subtle background track */
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  transform: translateX(-50%);
+  background-color: rgba(58,134,255,0.12); /* subtle blue track */
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .experience-line {
+    left: 50%;
+  }
+}
+
+.experience-line-fill {
+  /* fill bar - height controlled by --progress (0% - 100%) */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--progress, 0%);
+  background-color: var(--color-blue);
+  transition: height 120ms linear;
 }
 
 .experience-items {

@@ -3,7 +3,7 @@ const colors = {
   card: '#1E1E1E',
   textPrimary: '#EDEDED',
   textSecondary: '#A0A0A0',
-  accent: '#F48FB1',
+  accent: '#3A86FF',
 
   // legacy
   light: '#F7F7F7',
